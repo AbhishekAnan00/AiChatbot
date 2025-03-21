@@ -20,7 +20,7 @@ io.on("connection", (socket) => {
         console.log("User:", msg);
 
         const response = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+            model: "gemini-2.0-flash",
             messages: [{ role: "user", content: msg }],
         });
 
